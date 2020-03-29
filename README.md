@@ -61,4 +61,4 @@ You are tasked to create microservice wich aggregates data from SQL native and J
  - generator for ElasticSearch queries
  - F# native GRPC generator
  - GraphQL
- - C bindings with calli
+ - GC free untyped C bindings with calli
