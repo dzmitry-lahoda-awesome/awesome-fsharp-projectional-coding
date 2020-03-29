@@ -25,7 +25,7 @@ Code all external calls, contracts, integrations interactively in original langu
 
 You are tasked to create microservice wich aggregates data from SQL native and JSON native databases. And provide web api.
 
-## Possible steps
+### Possible steps
 
 - Create and push SQL scripts into repo you created in database client
 - Create JSON scripts you used to run agains JSON database
@@ -35,6 +35,13 @@ You are tasked to create microservice wich aggregates data from SQL native and J
 - Generate F# stubs-types-entries
 - Code wiring logic
 - Write tests in Gherking language (provide these to Tester to testers)
+
+### Analysis
+
+- We use as much of discovery phase artifacts as possibe
+- We communicate as effectively as possible
+- We get F# codes generators from which we can start domain modelling (if we need to)
+- We write as few mappers as possible (hence can be concurrent on market with TypeScript considering speed of development)
 
 ## Projects
 
