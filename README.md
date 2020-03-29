@@ -14,7 +14,7 @@
 
 - Programs are texts, not binary ASTs as in [Intentional Programming](https://en.wikipedia.org/wiki/Intentional_programming)
 
-# Example
+# Examples
 
 ## Problem 1
 
@@ -47,7 +47,7 @@ You have to read configurations in microservice in hosted environment.
 - Wire custom hierarchy of choices
 - Change wiring and configuration if host changes
 
-### Analysys
+### Analysis
 
 We could delegate merging work to `Microsoft.Extensions.Configuration`, but ... (I have several pros and cons for these, need to recall, but proposed solution with compile time configuration still makes sense - software is much harded to break because of miss configuration)
 
