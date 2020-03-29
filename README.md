@@ -39,7 +39,7 @@ You are tasked to create microservice wich aggregates data from SQL native and J
 ### Analysis
 
 - We use as much of discovery phase artifacts as possibe
-- We communicate as effectively as possible
+- We communicate as effectively as possible (we will have iterate this manu times as system evolves)
 - We get F# codes generators from which we can start domain modelling (if we need to)
 - We write as few mappers as possible (hence can be concurrent on market with TypeScript considering speed of development)
 
@@ -71,3 +71,41 @@ You are tasked to create microservice wich aggregates data from SQL native and J
  - F# native GRPC generator
  - GraphQL
  - GC free untyped C bindings with calli
+
+
+### Old
+
+**Gluing code projects from original native to system languages**
+
+Anyway scripter needs to learn underlying language to be effective. So there is only need to project underlying language into F#.
+
+- E.g F# type provider for JSON ElasticSearch mappings and for database entities from SQL/ADO. 
+- E.g raw REST requests/responce and raw URL combinator.
+
+**Compiled means configured**
+
+- I.e. during compilation, credentials availability checked and even some services are called (REST or DB). 
+- Fail to compile means fail to configure. 
+- System should be configured natively first before code.
+- Compiled script will need whole configuration presented to run.
+
+**Flat views**
+
+- If some scripts needs only REST, it will not depend on database compilation and configuration.
+- Internally configuration and entities may be hierarchucal and complex, but for sripting these are flaten for usage.
+
+F# script coding guidelines:
+---
+- each script has header describing purpose and result with single line
+- All dependencies resolved via Paket. Each script has line to run packet in header.
+- no `new` keyword
+- no types in method declarations parameters 
+- no handled exceptions throws, for handled errors use Option/Railway programmin. 
+- Totally fail if exception
+- Share `#r` list via `references.fsx`
+- By default scipts are idempotent, may compile and run twice. Given environment same will get same results.
+- Decide what to 2 if same stucture compiled 2 in different namespaces via 2 `#load` do create `.fs` file with namespace.
+
+# Scripting
+
+One line to boostrap F# and then all in it an only in it. Including all scripts.
