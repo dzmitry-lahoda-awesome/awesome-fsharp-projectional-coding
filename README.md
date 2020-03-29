@@ -30,11 +30,11 @@ You are tasked to create microservice wich aggregates data from SQL native and J
 - Create and push SQL scripts into repo you created in database client
 - Create JSON scripts you used to run agains JSON database
 - Write definion of OpenAPI
-- Validate all these with parties (Data Engineers for queries and frontend developers for API)
+- Validate queries and data they return with with parties (Data Engineers for queries and frontend developers for API)
 - Template original queries (any custom templating will work fine)
 - Generate F# stubs-types-entries
 - Code wiring logic
-- Write tests in Gherking language
+- Write tests in Gherking language (provide these to Tester to testers)
 
 ## Projects
 
@@ -55,6 +55,8 @@ You are tasked to create microservice wich aggregates data from SQL native and J
  
  - https://github.com/Fable-Fauna/Fable.Flora - styling user interfaces
  - https://github.com/fable-compiler/ts2fable - web native APIs
+ 
+ - https://github.com/fsprojects/FsXaml - windows user interfaces
  
 ### Possible
  
