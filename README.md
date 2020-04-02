@@ -83,11 +83,15 @@ We could delegate merging work to `Microsoft.Extensions.Configuration`, but ... 
 
 ### API
 
-- https://github.com/Szer/GiraffeGenerator - API
+- https://github.com/Szer/GiraffeGenerator - server (stub) API
 
 - https://github.com/OpenAPITools/openapi-generator 
 
 - https://github.com/fable-compiler/ts2fable - web native APIs
+
+- https://github.com/fsprojects/SwaggerProvider - client generator
+
+- https://github.com/rflechner/SwaggerForFsharp protocol generator from F# Girrafe code declarations
 
 ### Testing
 
