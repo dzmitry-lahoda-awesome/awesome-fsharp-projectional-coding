@@ -49,6 +49,10 @@ You have to read configurations in microservice in hosted environment.
 - Wire custom hierarchy of choices
 - Change wiring and configuration if host changes
 
+## Problem 3
+
+Modelling authorization API with SQL(identity source), Gremlin(scopes and right modelling) and GraphQL(API modelling).
+
 ### Analysis
 
 We could delegate merging work to `Microsoft.Extensions.Configuration`, but ... (I have several pros and cons for these, need to recall, but proposed solution with compile time configuration still makes sense - software is much harded to break because of miss configuration)
